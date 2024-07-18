@@ -3,7 +3,13 @@ Official Implementation of "Learning to Refuse: Towards Mitigating Privacy Risks
 
 ## RETURN: Real-world pErsonal daTa UnleaRNing dataset
 
-RETURN is avaliable in `data/RETURN.jsonl`.
+RETURN is avaliable in `data/RETURN.jsonl`. You also can access RETURN directly on [Hugging Face](https://huggingface.co/datasets/zhliu/RETURN).
+
+```python
+from datasets import load_dataset
+
+dataset = load_dataset("zhliu/RETURN")
+```
 
 ## Citation
 
