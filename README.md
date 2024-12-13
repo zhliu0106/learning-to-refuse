@@ -43,13 +43,10 @@ bash scripts/run.sh
 ## Citation
 
 ```bibtex
-@misc{liu2024learningrefusemitigatingprivacy,
-      title={Learning to Refuse: Towards Mitigating Privacy Risks in LLMs}, 
-      author={Zhenhua Liu and Tong Zhu and Chuanyuan Tan and Wenliang Chen},
-      year={2024},
-      eprint={2407.10058},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2407.10058}, 
+@article{liu2024learning,
+  title={Learning to refuse: Towards mitigating privacy risks in llms},
+  author={Liu, Zhenhua and Zhu, Tong and Tan, Chuanyuan and Chen, Wenliang},
+  journal={arXiv preprint arXiv:2407.10058},
+  year={2024}
 }
 ```
