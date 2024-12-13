@@ -40,6 +40,10 @@ bash scripts/data_process.sh
 bash scripts/run.sh
 ```
 
+**Note:**  Due to differences in hardware environments and random seed settings, there might be slight variations in the experimental results.
+
+
+
 ## Citation
 
 ```bibtex
