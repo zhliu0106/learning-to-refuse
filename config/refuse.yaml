@@ -1,0 +1,28 @@
+project_dir: refuse
+model_name: Meta-Llama-3-8B-Instruct
+model_path: meta-llama/Meta-Llama-3-8B-Instruct
+flash_attention_2: True
+torch_dtype: bfloat16
+nli_model_path: sileod/deberta-v3-base-tasksource-nli
+
+return_data_path: ${project_dir}/data/PopCelebrityQA_gpt4.jsonl
+forget_ratio: 0.1
+augmented_num: 10
+
+data_dir: ${project_dir}/data/${model_name}
+idk_data_path: ${project_dir}/data/idontknow.jsonl
+refuse_data_path: ${project_dir}/data/refuse.jsonl
+
+seed: 42
+per_device_train_batch_size: 8
+gradient_accumulation_steps: 1
+warmup_ratio: 0.1
+num_train_epochs: 5
+learning_rate: 1e-5
+optimizer: adamw_hf
+weight_decay: 0.01
+beta: 0.1
+loss_type: gradient_ascent
+
+save_dir: ${project_dir}/saved_models/${model_name}/${loss_type}
+eval_output_dir: ${project_dir}/results/${model_name}/${loss_type}

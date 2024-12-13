@@ -1,0 +1,12 @@
+batch_size: 128
+num_data_per_person: 20
+project_dir: refuse
+model_name: Meta-Llama-3-8B-Instruct
+model_path: meta-llama/Meta-Llama-3-8B-Instruct
+flash_attention_2: True
+torch_dtype: bfloat16
+nli_model_path: sileod/deberta-v3-base-tasksource-nli
+data_dir: ${project_dir}/data/${model_name}
+return_data_path: ${project_dir}/data/PopCelebrityQA_gpt4.jsonl
+forget_ratio: 0.1
+augmented_num: 10
